@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class InterfaceManager : MonoBehaviour
 {
@@ -16,6 +15,6 @@ public class InterfaceManager : MonoBehaviour
     */
     public void LoadLevel(string _LevelName)
     {
-        SceneManager.LoadScene(_LevelName);
+        GameManager.instance.LoadLevel(_LevelName);
     }
 }
