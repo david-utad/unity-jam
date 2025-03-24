@@ -27,4 +27,9 @@ public class Balanzacion : MonoBehaviour
 
         m_currentPieza.velocity = velocity;
     }
+
+    public void SpawnPieza()
+    {
+        //meter logica  de spawn de pieza
+    }
 }
