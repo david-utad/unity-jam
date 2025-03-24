@@ -15,6 +15,6 @@ public class InterfaceManager : MonoBehaviour
     */
     public void LoadLevel(string _LevelName)
     {
-        GameManager.instance.LoadLevel(_LevelName);
+        GameManager.Instance.LoadLevel(_LevelName);
     }
 }

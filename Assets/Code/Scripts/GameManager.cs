@@ -1,26 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utils;
 
-
-public class GameManager : MonoBehaviour
+public class GameManager : TemporalSingleton<GameManager>
 {
-    public static GameManager instance;
-
-
-
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void OnEnable()
     {
